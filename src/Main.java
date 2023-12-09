@@ -43,7 +43,7 @@ public class Main {
         } else {
             System.out.println(teacher1.getName() + " is less senior than " + teacher2.getName() + "!");
         }
-        System.out.println("\n\nNow, lets look at the average of out student " + student.getName() + " !");
+        System.out.println("\n\nNow, lets look at the average of out student " + student.getName() + " !\n");
         System.out.println(student.getName() + "'s average is " + student.getAverage() + "%!");
 
         //Compares teacher 1 to teacher 2, and if its more senior it sets its employee number to the more senior one. If not, it sets its employee number to the less senior one, and vice versa for teacher 2.
