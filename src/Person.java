@@ -52,7 +52,7 @@ public class Person {
     public String toString() {
         return "\n\nPerson Name is: " + getName() +
                 "\n\nPerson School is: " + getSchool() +
-                "\n\nPerson Age is: " + +getAge() +
+                "\n\nPerson Age is: " + getAge() +
                 "\n\nPerson Address is: " + getContact().substring(0, getContact().lastIndexOf(" ")) +
                 "\n\nPerson Phone Number is: " + getContact().substring(getContact().lastIndexOf(" ") + 1);
     }

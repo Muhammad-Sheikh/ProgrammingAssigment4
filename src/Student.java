@@ -81,7 +81,7 @@ class Student extends Person {
         return "Student Number is: " + getNumber() +
                 "\n\nStudent Name is: " + super.getName() +
                 "\n\nStudent School is: " + getSchool() +
-                "\n\nStudent Age is: " + +getAge() +
+                "\n\nStudent Age is: " + getAge() +
                 //The address is separated from the number by a space, so uses substring to output the first half
                 "\n\nStudent Address is: " + getContact().substring(0, getContact().lastIndexOf(" ")) +
                 //Uses another substring to print the last half to print phone number

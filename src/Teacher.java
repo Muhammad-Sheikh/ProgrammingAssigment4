@@ -32,7 +32,7 @@ class Teacher extends Person {
         return "Employee Number is: " + getNum() +
                 "\n\nTeacher Name is: " + super.getName() +
                 "\n\nTeacher School is: " + getSchool() +
-                "\n\nTeacher Age is: " + +getAge() +
+                "\n\nTeacher Age is: " + getAge() +
                 //The address is separated from the number by a space, so uses substring to output the first half
                 "\n\nTeacher Address is: " + getContact().substring(0, getContact().lastIndexOf(" ")) +
                 //Uses another substring to print the last half to print phone number
