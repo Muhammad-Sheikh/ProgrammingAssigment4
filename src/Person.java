@@ -1,58 +1,60 @@
 public class Person {
-    String firstName, lastName, adress;
+    //Variable declaration
+    String firstName, lastName, address;
     int phone, age;
-    public Person(String firstN, String lastN)
-    {
+
+    //First constructor to set name, sets all other values to 0/null
+    public Person(String firstN, String lastN) {
         firstName = firstN;
         lastName = lastN;
         phone = 0;
         age = 0;
-        adress = null;
+        address = null;
     }
-    public Person(String firstN, String lastN, String a, int p, int age)
-    {
+
+    //Second constructor with more variables
+    public Person(String firstN, String lastN, String a, int p, int age) {
         firstName = firstN;
         lastName = lastN;
-        adress = a;
+        address = a;
         phone = p;
         this.age = age;
     }
-
-
-    public void setName(String firstN, String lastN)
-    {
+    //Name setter
+    public void setName(String firstN, String lastN) {
         firstName = firstN;
         lastName = lastN;
     }
-
-    public void  setContact(int phoneNumber, String newAdress)
-    {
+    //Contact setter
+    public void setContact(int phoneNumber, String newAddress) {
         phone = phoneNumber;
-        adress = newAdress;
+        address = newAddress;
     }
-
-    public void setAge(int a)
-    {
+    //Age setter
+    public void setAge(int a) {
         age = a;
     }
-    static String getSchool()
-    {
-        return "Marc Garneua";
+    //Returns school name when called as a string
+    static String getSchool() {
+        return "Marc Garneau Collegiate Institute";
     }
-
-    public String getName()
-    {
+    //Age getter
+    public int getAge() { return age; }
+    //Name getter
+    public String getName() {
         return firstName + " " + lastName;
     }
-
-    public String getContact()
-    {
-        return adress;
+    //Contact getter, returns address and phone separated by a space
+    public String getContact() {
+        return address + " " + phone;
     }
-
-    public String toString()
-    {
-        return null;
+    //Outputs all variables in Person Class
+    public String toString() {
+        return "\n\nPerson Name is: " + getName() +
+                "\n\nPerson School is: " + getSchool() +
+                "\n\nPerson Age is: " + +getAge() +
+                "\n\nPerson Address is: " + getContact().substring(0, getContact().lastIndexOf(" ")) +
+                "\n\nPerson Phone Number is: " + getContact().substring(getContact().lastIndexOf(" ") + 1);
     }
 
 
