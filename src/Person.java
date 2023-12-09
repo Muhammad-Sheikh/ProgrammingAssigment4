@@ -1,10 +1,23 @@
 public class Person {
     String firstName, lastName, adress;
     int phone, age;
-    public Person()
+    public Person(String firstN, String lastN)
     {
-
+        firstName = firstN;
+        lastName = lastN;
+        phone = 0;
+        age = 0;
+        adress = null;
     }
+    public Person(String firstN, String lastN, String a, int p, int age)
+    {
+        firstName = firstN;
+        lastName = lastN;
+        adress = a;
+        phone = p;
+        this.age = age;
+    }
+
 
     public void setName(String firstN, String lastN)
     {

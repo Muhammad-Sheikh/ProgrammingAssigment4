@@ -1,6 +1,11 @@
 class Teacher extends Person {
     int employeeNumber, seniority;
 
+    public Teacher(int eNum, String firstN, String lastN) {
+        super(firstN, lastN);
+        seniority = eNum;
+    }
+
     public void setSeniority(int s)
     {
         seniority = s;
@@ -23,13 +28,7 @@ class Teacher extends Person {
 
     public boolean isSenior(Teacher t)
     {
-        if(t.getSeniority() < seniority)
-        {
-            return false;
-        }else
-        {
-            return true;
-        }
+        return t.getSeniority() >= seniority;
     }
 
 }

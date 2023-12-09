@@ -2,9 +2,14 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Student student = new Student();
-        Teacher teacher1 = new Teacher();
-        Teacher teacher2 = new Teacher();
+
+
+        String[] test = {"90", "20", "30", "40"};
+        Student student = new Student(test, 2, "city", "hello");
+        Teacher teacher1 = new Teacher(3, "Bruh", "Sender");
+        Teacher teacher2 = new Teacher(2,"Bruh2", "city2" );
+
+        student.test();
 
         student.setCourseGrade(20, "Math");
 

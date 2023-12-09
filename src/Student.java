@@ -1,15 +1,31 @@
+import java.util.Arrays;
+
 class Student extends Person{
     int studentNumber;
     String[][] coursesGrades = new String[4][2];
-    public Student()
+    public Student(String[] courses, int n, String firstN, String lastN)
  {
-     coursesGrades = new String[][]{{"0", "0", "0", "0"}, {"0", "0", "0", "0"}};
+     super(firstN, lastN);
+
+
+     coursesGrades = new String[][]{{"Math", "English", "Chemistry", "History"}, {"0", "0", "0", "0"}};
+
+     for(int i = 0; i < 4;i++)
+     {
+         coursesGrades[0][i] = courses[i];
+     }
+
+     super.setAge(20);
  }
 
  public void setNumber(int n)
  {
      studentNumber = n;
  }
+    public void test()
+    {
+        System.out.println(Arrays.deepToString(coursesGrades));
+    }
 
     public void setCourseGrade(double g, String course)
     {
